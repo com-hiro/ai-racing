@@ -50,5 +50,13 @@ Copyright (c) 2025 Akira Hirohashi. All rights reserved.
 The source code for this project is released under the **MIT License**. 
 Please refer to the [LICENSE](./LICENSE.txt) file for the full terms and conditions. 
 
+### Third-Party Licenses
+This project utilizes the following open-source libraries:
+- **Pygame**: (LGPL License) Used for engine and physics simulation.
+- **OpenCV**: (Apache 2.0 License) Used for real-time visual processing.
+- **NumPy**: (BSD License) Used for matrix operations.
+
+All third-party libraries remain the property of their respective owners.
+
 ---
 🛡️ **Disclaimer**: This software is provided "AS IS," without warranty of any kind. Use the program at your own risk.
