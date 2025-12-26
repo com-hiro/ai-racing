@@ -183,8 +183,10 @@ def start_pilot():
         hsv = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2HSV)
         mask = cv2.inRange(hsv, np.array([20, 100, 100]), np.array([40, 255, 255]))
         M = cv2.moments(mask)
+        # errは学習(報酬計算)に必要なので計算は残します
         err = (int(M["m10"] / M["m00"]) - 100) if M["m00"] > 0 else 0
-        cv2.circle(img_rgb, (err+100, 100), 6, BRIGHT_RED, -1)
+
+        cv2.circle(img_rgb, (100, 100), 6, (255, 0, 0), -1)
 
         # --- 3. 学習と物理演算 ---
         if countdown > 0:
