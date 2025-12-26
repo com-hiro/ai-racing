@@ -41,7 +41,7 @@ Ensure you have Python installed, then run:
 pip install pygame opencv-python numpy
 ```
 
-2. Run the Simulation
+### 2. Run the Simulation
 Execute the main script to start the racing simulation:
 ```bash
 python main_menu.py
